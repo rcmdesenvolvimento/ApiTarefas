@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
-opt.UseInMemoryDatabase("TaredasDB"));
+opt.UseInMemoryDatabase("TarefasDB"));
 
 var app = builder.Build();
 
