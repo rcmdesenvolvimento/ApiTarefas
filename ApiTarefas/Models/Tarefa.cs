@@ -1,8 +1,11 @@
-﻿namespace ApiTarefas.Models
+﻿using System.Text.Json.Serialization;
+
+namespace ApiTarefas.Models
 {
     public class Tarefa
     {
-        public int Id { get; set; }
+        //[JsonIgnore]
+        public int Id { get; private set; }
         public string? Nome { get; set; }
         public bool isConcluida { get; set; }
     }
